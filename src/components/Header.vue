@@ -1,12 +1,17 @@
 <script>
 export default {
   nome: 'Header',
+  props:{
+    titleStr: String
+  }
 }
 </script>
 
 
 <template>
-  <header>HEADER</header>
+  <header class="text-center my-5">
+    <h1>{{ titleStr }}</h1>
+  </header>
 </template>
 
 
