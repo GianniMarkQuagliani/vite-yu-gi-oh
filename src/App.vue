@@ -12,6 +12,25 @@ export default {
         Header,
         CardsContainer,
         Resuts
+    },
+    data(){
+        return{
+            store
+        }
+    },
+    methods :{
+        getApi(){
+            axios.get(store.apiUrl).then( res =>{
+                store.charctersList = res.data;
+                console.log(store.charctersList);
+            })
+            .catch(err => {
+                console.log(err);
+            })
+        }
+    },
+    mounted(){
+        this.getApi();
     }
 }
 </script>
