@@ -1,0 +1,26 @@
+@use './partials/vars' as *;
+
+
+@import 'bootstrap/scss/bootstrap';
+@import '@fontsource/montserrat';
+@import '@fontsource/montserrat/700.css';
+
+body {
+    font-family: $main-font;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3ad5f1e1-a7ea-43d2-aeab-7ae5cc9aee62/d47ia5q-efb252bb-48ef-400b-988a-594dc7539006.png/v1/fill/w_1000,h_600,q_80,strp/awesome_yugioh_background_by_zarkhaiz_d47ia5q-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvM2FkNWYxZTEtYTdlYS00M2QyLWFlYWItN2FlNWNjOWFlZTYyXC9kNDdpYTVxLWVmYjI1MmJiLTQ4ZWYtNDAwYi05ODhhLTU5NGRjNzUzOTAwNi5wbmciLCJ3aWR0aCI6Ijw9MTAwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.cIQHPD5S4xy6YGc59Qc2gsVIAmp7-j4sS_GnFlvVvjg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: red;
+    background-color: black;
+    font-weight: 700;
+}
