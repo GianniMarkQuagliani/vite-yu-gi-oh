@@ -21,78 +21,12 @@ export default {
 <template>
   <div class="container my-5">
     <div class="row">
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
-      <div class="col-3">
-        <CharacterCard />
-      </div>
+      <CharacterCard
+      v-for="card in store.charctersList" 
+      :key="card.id" 
+      :image="card.card_images[0].image_url" 
+      :name="card.name" 
+      :frameType="card.frame" />
     </div>
   </div>
 </template>

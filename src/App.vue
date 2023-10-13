@@ -23,8 +23,8 @@ export default {
         getApi(){
             axios.get(store.apiUrl)
             .then( res =>{
-                store.charctersList = res.data;
-                console.log(store.charctersList);
+                store.charctersList = res.data.data;
+                console.log(store.charctersList[0].card_images[0].image_url);
             })
             .catch(err => {
                 console.log(err);

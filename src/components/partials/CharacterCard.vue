@@ -3,7 +3,8 @@ export default {
   nome: 'CharacterCard',
   props:{
     image: String,
-    name: String
+    name: String,
+    frameType: String
   }
 }
 </script>
@@ -11,17 +12,15 @@ export default {
 
 <template>
       
-  <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top" src="https://images.ygoprodeck.com/images/cards/73262676.jpg" alt="Card image cap">
-      <div class="card-body">
-        <p>bla bla</p>
-          <p>bla bla</p>
-          <p>bla bla</p>
-          <p>bla bla</p>
-      </div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" :src="image" alt="name">
+    <div class="card-body">
+      <p>{{name}}</p>
+      <p>{{frameType}}</p>
+     </div>
   </div>
-  </div>
+</div>
       
 </template>
 
