@@ -12,9 +12,9 @@ export default {
 
 <template>
       
-<div class="card-deck">
+<div class="col-3">
   <div class="card">
-    <img class="card-img-top" :src="image" alt="name">
+    <img class="card-img-top" :src="image" :alt="name">
     <div class="card-body">
       <p>{{name}}</p>
       <p>{{frameType}}</p>
