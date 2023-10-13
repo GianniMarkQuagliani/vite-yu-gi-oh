@@ -19,8 +19,10 @@ export default {
         }
     },
     methods :{
+        // chiamata API
         getApi(){
-            axios.get(store.apiUrl).then( res =>{
+            axios.get(store.apiUrl)
+            .then( res =>{
                 store.charctersList = res.data;
                 console.log(store.charctersList);
             })

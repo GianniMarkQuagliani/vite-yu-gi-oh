@@ -21,12 +21,78 @@ export default {
 <template>
   <div class="container my-5">
     <div class="row">
-      <CharacterCard
-        v-for="character in store.charctersList"
-        :key="character.id"
-        :image="character.image"
-        :name="character.name"
-      />
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
+      <div class="col-3">
+        <CharacterCard />
+      </div>
     </div>
   </div>
 </template>

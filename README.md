@@ -7,3 +7,4 @@
 - prendo le api e li stampo sulla console
 - ho aggiuntio delle classi su main.scss per il backgroud e per il titolo
 - modifico CharacterCard.vue, ci metto le props e li collego al template
+- facciamo la statica e poi passo la props e diventa dinamica
