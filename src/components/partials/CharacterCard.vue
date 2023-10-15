@@ -1,6 +1,6 @@
 <script>
 export default {
-  nome: 'CharacterCard',
+  name: 'CharacterCard',
   props:{
     image: String,
     name: String,

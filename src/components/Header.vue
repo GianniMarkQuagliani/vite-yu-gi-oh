@@ -1,6 +1,6 @@
 <script>
 export default {
-  nome: 'Header',
+  name: 'Header',
   props:{
     titleStr: String
   }

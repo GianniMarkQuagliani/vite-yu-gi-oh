@@ -2,7 +2,7 @@
 import { store } from '../data/store';
 import CharacterCard from './partials/CharacterCard.vue';
 export default {
-  nome: 'CardsContainer',
+  name: 'CardsContainer',
   components:{
     CharacterCard
   },

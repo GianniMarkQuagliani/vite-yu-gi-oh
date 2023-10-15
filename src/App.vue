@@ -4,14 +4,16 @@ import axios from 'axios';
 import { store } from './data/store';
 import Header from './components/Header.vue';
 import CardsContainer from './components/CardsContainer.vue';
-import Resuts from './components/partials/Resuts.vue';
+import Results from './components/partials/Results.vue';
+import SearchBar from './components/partials/SearchBar.vue';
 
 export default {
-    nome: 'App',
+    name: 'App',
     components: {
         Header,
         CardsContainer,
-        Resuts
+        Results,
+        SearchBar
     },
     data(){
         return{
@@ -40,7 +42,8 @@ export default {
 
 <template>
   <Header titleStr="Vite Yu-Gi-Oh" />
-  <Resuts />
+  <SearchBar />
+  <Results />
   <CardsContainer />
   
 </template>

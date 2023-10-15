@@ -1,7 +1,7 @@
 <script>
 import { store } from '../../data/store';
 export default {
-  nome: 'Results',
+  name: 'Results',
   data(){
     return{
       store
