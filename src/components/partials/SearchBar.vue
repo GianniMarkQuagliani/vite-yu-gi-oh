@@ -1,6 +1,19 @@
 <script>
+import { store } from '../../data/store';
 export default {
-    name: 'SearchBar'
+    name: 'SearchBar',
+    data(){
+        return{
+            store
+        }
+    },
+    methods :{
+        reset (){
+            store.nameToSearch = '';
+            store.archetypeToSearch = '';
+            this.$emit('startSearch');
+        }
+    }
 }
 </script>
 
@@ -9,11 +22,11 @@ export default {
   <div class="container">
     <div class="row justify-content-center">
         <div class="col-auto">
-            <input type="text" class="form-control" placeholder="Search">
+            <input v-model="store.nameToSearch" type="text" class="form-control" placeholder="Search">
         </div>
         <div class="col-auto">
-            <select name="form-control" aria-label="Default select example">
-                <option selected>Select Status</option>
+            <select v-model="store.archetypeToSearch" name="form-control" aria-label="Default select example">
+                <option selected value="">Select archetype</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>

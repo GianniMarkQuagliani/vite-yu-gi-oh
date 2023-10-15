@@ -4,7 +4,7 @@ export default {
   props:{
     image: String,
     name: String,
-    frameType: String
+    archetype: String
   }
 }
 </script>
@@ -17,7 +17,7 @@ export default {
     <img class="card-img-top" :src="image" :alt="name">
     <div class="card-body">
       <p>{{name}}</p>
-      <p>{{frameType}}</p>
+      <p>{{archetype}}</p>
      </div>
   </div>
 </div>

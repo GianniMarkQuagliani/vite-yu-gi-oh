@@ -23,7 +23,13 @@ export default {
     methods :{
         // chiamata API
         getApi(){
-            axios.get(store.apiUrl)
+            axios.get(store.apiUrl, {
+                params:{
+                  name: store.nameToSearch,
+                  archetype: store.archetypeToSearch
+                  
+                }
+            })
             .then( res =>{
                 store.charctersList = res.data.data;
                 console.log(store.charctersList[0].card_images[0].image_url);
@@ -31,9 +37,6 @@ export default {
             .catch(err => {
                 console.log(err);
             })
-        },
-        testEmit (){
-          console.log('testEmit');
         }
     },
     mounted(){
@@ -45,7 +48,7 @@ export default {
 
 <template>
   <Header titleStr="Vite Yu-Gi-Oh" />
-  <SearchBar @startSearch="testEmit" />
+  <SearchBar @startSearch="getApi" />
   <Results />
   <CardsContainer />
   
