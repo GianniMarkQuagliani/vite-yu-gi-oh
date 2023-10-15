@@ -31,6 +31,9 @@ export default {
             .catch(err => {
                 console.log(err);
             })
+        },
+        testEmit (){
+          console.log('testEmit');
         }
     },
     mounted(){
@@ -42,7 +45,7 @@ export default {
 
 <template>
   <Header titleStr="Vite Yu-Gi-Oh" />
-  <SearchBar />
+  <SearchBar @startSearch="testEmit" />
   <Results />
   <CardsContainer />
   
